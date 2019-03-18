@@ -128,13 +128,13 @@ In this exercise we explore how Configuration Server pulls configuration from a 
     ---
     applications:
     - name: dotnet-core-api
-        random-route: true
-        buildpack: https://github.com/cloudfoundry/dotnet-core-buildpack
-        instances: 1
-        memory: 256M
-        env:
+      random-route: true
+      buildpack: https://github.com/cloudfoundry/dotnet-core-buildpack
+      instances: 1
+      memory: 256M
+      env:
         ASPNETCORE_ENVIRONMENT: development
-        services:
+      services:
         - myConfigServer
     ```
 
